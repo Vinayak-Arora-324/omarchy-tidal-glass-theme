@@ -7,13 +7,36 @@ sea-blue accent, and four photographs of cold water.
 
 ## Install
 
+On any Omarchy system, run:
+
 ```bash
 omarchy theme install https://github.com/Vinayak-Arora-324/omarchy-tidal-glass-theme.git
 ```
 
-The repo is private, so git needs GitHub access first (`gh auth login`, then
-`gh auth setup-git`). Switch back to it any time with
-`omarchy theme set tidal-glass`.
+Or open the Omarchy menu (`Super + Space`), go to **Install → Style →
+Theme** and paste the URL above.
+
+Omarchy clones the repo into `~/.config/omarchy/themes/tidal-glass` and applies
+it straight away. After that it shows up in the theme switcher
+(`Super + Ctrl + Shift + Space`), or you can set it by name:
+
+```bash
+omarchy theme set tidal-glass
+```
+
+### Update
+
+```bash
+omarchy theme update
+```
+
+This pulls the latest version of every theme you installed from git.
+
+### Remove
+
+```bash
+omarchy theme remove tidal-glass
+```
 
 ## Files
 
@@ -27,13 +50,19 @@ The repo is private, so git needs GitHub access first (`gh auth login`, then
 
 ### Corners and shadows
 
-Omarchy ignores `hyprland.lua` in themes installed from git. To get the rounded
-corners and shadow, make the theme a local copy:
+For safety, Omarchy skips any `*.lua` file in a theme installed from git, so
+`hyprland.lua` is not loaded and windows keep the default corners and shadow.
+Everything else still applies. If you want the rounded corners and shadow, read
+[`hyprland.lua`](hyprland.lua) first (it only sets border, rounding and shadow
+values), then turn the install into a local copy:
 
 ```bash
 rm -rf ~/.config/omarchy/themes/tidal-glass/.git
 omarchy theme set tidal-glass
 ```
+
+A local copy no longer gets `omarchy theme update`. To update it later, run the
+install command again, then repeat these two lines.
 
 ## Palette
 
