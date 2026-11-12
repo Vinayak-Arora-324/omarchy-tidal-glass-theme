@@ -1,0 +1,36 @@
+# Tidal Glass — a calm, glassy ocean-at-night palette with a macOS-like poise.
+mode = "dark"
+
+accent = "#6cc7e8"
+selection = "#213448"
+muted = "#4c5d70"
+
+background = "#0d1520"
+dark_background = "#0a1119"
+darker_background = "#070c12"
+lighter_background = "#17222f"
+
+foreground = "#d6e1eb"
+dark_foreground = "#6d7f92"
+light_foreground = "#b6c5d3"
+bright_foreground = "#f1f6fa"
+
+# Soft aqua-to-periwinkle glass edge on the focused window; a quiet hairline elsewhere.
+hyprland_active_border = "rgba(7fd3efcc) rgba(9aaefacc) 45deg"
+hyprland_inactive_border = "rgba(22303faa)"
+
+red = "#ef7f86"
+yellow = "#efd08a"
+orange = "#f2a77c"
+green = "#82d4b2"
+cyan = "#74d2d6"
+blue = "#6fa9f2"
+magenta = "#b7a2f0"
+brown = "#9c806d"
+
+bright_red = "#f6a2a7"
+bright_yellow = "#f6e0ab"
+bright_green = "#a6e4ca"
+bright_cyan = "#9ce3e5"
+bright_blue = "#9cc4f7"
+bright_magenta = "#cfc0f6"
