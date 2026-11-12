@@ -1,8 +1,7 @@
 # Tidal Glass
 
-A calm, glassy, ocean-at-night theme for [Omarchy](https://omarchy.org). It takes
-its poise from macOS (quiet hairline borders, soft depth, frosted surfaces) and
-sets it in deep navy water with aqua and periwinkle light.
+A dark theme for [Omarchy](https://omarchy.org). Graphite blue-grey windows, one
+sea-blue accent, and four photographs of cold water.
 
 ![Tidal Glass preview](preview.png)
 
@@ -12,54 +11,52 @@ sets it in deep navy water with aqua and periwinkle light.
 omarchy theme install https://github.com/Vinayak-Arora-324/omarchy-tidal-glass-theme.git
 ```
 
-The repo is private, so `git` needs access to GitHub first (for example
-`gh auth login` followed by `gh auth setup-git`).
+The repo is private, so git needs GitHub access first (`gh auth login`, then
+`gh auth setup-git`). Switch back to it any time with
+`omarchy theme set tidal-glass`.
 
-Switch to it later with `omarchy theme set tidal-glass`.
+## Files
 
-## What's inside
-
-| File | Purpose |
-|------|---------|
-| `colors.toml` | The palette. Omarchy generates terminal, editor, btop, browser and app themes from it. It also defines the aqua-to-periwinkle glass gradient on the focused window border. |
-| `shell.toml` | Frosted shell surfaces: translucent menus, launcher and notifications with fine 1px hairline borders and an aqua selection tint. |
-| `hyprland.lua` | 12px rounded corners and soft drop shadows. |
+| File | What it does |
+|------|--------------|
+| `colors.toml` | The palette. Omarchy builds the terminal, editor, btop and app themes from it. |
+| `shell.toml` | Menus, launcher, notifications and lock screen. |
+| `hyprland.lua` | 1px borders, 11px corners, window shadow. |
 | `icons.theme` | `Yaru-blue-dark` |
-| `backgrounds/` | Four original wallpapers: **Tide**, **Glass**, **Abyss**, **Lagoon**. |
-| `unlock.png`, `preview.png` | Lock-screen logo and theme-picker preview. |
-| `tools/make-backgrounds.py` | Regenerates the wallpapers (SVG → `rsvg-convert` → WebP). |
+| `backgrounds/` | The wallpapers. |
 
-### Rounded corners and shadows
+### Corners and shadows
 
-When a theme is installed from git, Omarchy won't load its `hyprland.lua`, so
-that file is skipped. To get the corners and shadows anyway, copy the theme
-locally as your own:
+Omarchy ignores `hyprland.lua` in themes installed from git. To get the rounded
+corners and shadow, make the theme a local copy:
 
 ```bash
 rm -rf ~/.config/omarchy/themes/tidal-glass/.git
 omarchy theme set tidal-glass
 ```
 
-You can also put `rounding = 12` in `~/.config/hypr/looknfeel.lua` instead.
-
 ## Palette
 
-| Role | Hex | | Role | Hex |
-|---|---|---|---|---|
-| background | `#0d1520` | | accent | `#6cc7e8` |
-| foreground | `#d6e1eb` | | selection | `#213448` |
-| red | `#ef7f86` | | green | `#82d4b2` |
-| yellow | `#efd08a` | | cyan | `#74d2d6` |
-| orange | `#f2a77c` | | blue | `#6fa9f2` |
-| magenta | `#b7a2f0` | | muted | `#4c5d70` |
+| | | | |
+|---|---|---|---|
+| background | `#1a2028` | foreground | `#d9dce0` |
+| accent | `#4a90c8` | selection | `#2c3f55` |
+| red | `#d96a70` | orange | `#cf8c5c` |
+| yellow | `#d3b878` | green | `#8db388` |
+| cyan | `#6bb2b8` | blue | `#6a9ed2` |
+| magenta | `#a590c0` | brown | `#9a8979` |
 
-## Regenerating wallpapers
+Window borders are a plain white hairline at low opacity, a little brighter on
+the focused window.
 
-```bash
-python3 tools/make-backgrounds.py build
-for f in build/*.svg; do
-  n=$(basename "$f" .svg)
-  rsvg-convert -w 3840 -h 2400 "$f" -o "build/$n.png"
-  magick "build/$n.png" -quality 90 "backgrounds/$n.webp"
-done
-```
+## Wallpapers
+
+All four are from [Pexels](https://www.pexels.com/license/), cropped to 16:10
+and lightly graded.
+
+| File | Photographer |
+|------|--------------|
+| `1-dusk.webp` | [Gilles Quertier](https://www.pexels.com/photo/misty-rocks-on-the-sea-at-dusk-in-bretagne-33401396/) |
+| `2-current.webp` | [Kris Møklebust](https://www.pexels.com/photo/dark-ocean-waves-with-reflective-light-patterns-34155535/) |
+| `3-deep.webp` | [Eyüpcan Timur](https://www.pexels.com/photo/deep-dark-ocean-waves-at-twilight-33333829/) |
+| `4-ripple.webp` | [Franco Garcia](https://www.pexels.com/photo/view-of-dark-blue-water-surface-18785204/) |

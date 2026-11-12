@@ -1,11 +1,12 @@
--- Tidal Glass: soft glass edges and generous, mac-like corner rounding.
--- (Applies when the theme lives in ~/.config/omarchy/themes as your own copy;
--- Omarchy regenerates borders from colors.toml when installed from git.)
-local active_border_color = { colors = { "rgba(7fd3efcc)", "rgba(9aaefacc)" }, angle = 45 }
-local inactive_border_color = "rgba(22303faa)"
+-- Tidal Glass: hairline neutral borders, rounded corners, wide soft shadow.
+-- (Used when the theme is a copy in ~/.config/omarchy/themes; installed from
+-- git, Omarchy generates the border colors from colors.toml.)
+local active_border_color = "rgba(ffffff2e)"
+local inactive_border_color = "rgba(ffffff14)"
 
 hl.config({
   general = {
+    border_size = 1,
     col = {
       active_border = active_border_color,
       inactive_border = inactive_border_color,
@@ -18,15 +19,15 @@ hl.config({
     },
   },
   decoration = {
-    rounding = 12,
+    rounding = 11,
     rounding_power = 4,
     shadow = {
       enabled = true,
-      range = 28,
+      range = 40,
       render_power = 3,
-      offset = "0 6",
-      color = "rgba(02060bb0)",
-      color_inactive = "rgba(02060b60)",
+      offset = "0 10",
+      color = "rgba(00000099)",
+      color_inactive = "rgba(00000055)",
     },
   },
 })

@@ -1,15 +1,15 @@
-# Tidal Glass — frosted, hairline-bordered shell surfaces.
+# Tidal Glass shell surfaces.
 # Omarchy shell surfaces. Colors derive from colors.toml; sizes and the
 # typographic scale come from the keys below. Themes can ship
 # themes/<name>/shell.toml to replace this generated file.
 
 [bar]
 # Alpha companions (where present) range from 0 (invisible) to 1 (opaque).
-background       = "#0d1520"
+background       = "#1a2028"
 background-alpha = 1.0
-text             = "#d6e1eb"
+text             = "#d9dce0"
 # Modules calling attention to themselves (recording, voxtype, alerts, updates)
-active           = "#ef7f86"
+active           = "#d96a70"
 # Cross-axis size at font base-size 12. size-horizontal is the height of
 # top/bottom bars; size-vertical is the width of left/right bars. With
 # scale-with-font enabled, these grow/shrink with [font] base-size.
@@ -20,9 +20,9 @@ size-vertical    = 28
 [hyprland]
 # Shared Hyprland-derived border tokens. Surface sections reference these so
 # lock, notifications, popups, and menu-style cards stay aligned with the
-# current Hyprland active-border gradient.
-active-border            = "rgba(7fd3efcc) rgba(9aaefacc) 45deg"
-active-border-foreground = "rgba(7fd3efcc) rgba(9aaefacc) 45deg"
+# current Hyprland active border.
+active-border            = "rgba(ffffff2e)"
+active-border-foreground = "rgba(ffffff2e)"
 
 [controls]
 # Shared state tokens for interactive control chrome (buttons, dropdowns,
@@ -32,32 +32,32 @@ active-border-foreground = "rgba(7fd3efcc) rgba(9aaefacc) 45deg"
 # N, "Y X", "T X B", or "T R B L". Per-side keys like
 # normal-border-width-left override the list. Each *-border accepts either a
 # solid color or a Hyprland-style gradient, e.g. "rgba(...) rgba(...) 45deg".
-normal-color        = "#d6e1eb"
+normal-color        = "#d9dce0"
 normal-fill-alpha   = 0.04
-normal-border       = "#d6e1eb"
+normal-border       = "#d9dce0"
 normal-border-width = 1
-normal-border-alpha = 0.18
+normal-border-alpha = 0.14
 
 # Hover-cursor: mouse hover and the panel keyboard cursor.
-hover-cursor-color        = "#d6e1eb"
+hover-cursor-color        = "#d9dce0"
 hover-cursor-fill-alpha = 0.07
-hover-cursor-border       = "#d6e1eb"
+hover-cursor-border       = "#d9dce0"
 hover-cursor-border-width = 1
-hover-cursor-border-alpha = 0.18
+hover-cursor-border-alpha = 0.14
 
 # Focus: Qt activeFocus. Mirror the hover-cursor values by default so
 # mouse hover, keyboard cursor, and tab focus all read as the same state
 # — themes that want focus to stand out override these four lines.
-focus-color      = "#6cc7e8"
+focus-color      = "#4a90c8"
 focus-fill-alpha   = 0.08
-focus-border     = "#6cc7e8"
+focus-border     = "#4a90c8"
 focus-border-width = 1
-focus-border-alpha = 0.55
+focus-border-alpha = 0.70
 
 # Selected: persistent chosen/current state.
-selected-color   = "#6cc7e8"
-selected-fill-alpha = 0.16
-selected-border       = "#d6e1eb"
+selected-color   = "#386fa3"
+selected-fill-alpha = 0.30
+selected-border       = "#d9dce0"
 selected-border-width = 0
 selected-border-alpha = 1.0
 
@@ -125,66 +125,66 @@ base-size = 12
 # Border accepts either a solid color or a Hyprland-style gradient. Border
 # widths accept one CSS-style scalar/list: N, "Y X", "T X B", or "T R B L";
 # individual border-width-top/right/bottom/left keys override the list.
-background       = "#111b27"
-background-alpha = 0.96
-text             = "#d6e1eb"
-border           = "#a9d8f0"
-border-alpha     = 0.22
+background       = "#232a33"
+background-alpha = 0.97
+text             = "#d9dce0"
+border           = "#ffffff"
+border-alpha     = 0.12
 border-width     = 1
 
 [tooltip]
 # Hover tooltips across the bar, panels, and buttons. background-alpha of
 # 0.97 mirrors the legacy hard-coded tooltip opacity.
-background       = "#17222f"
-background-alpha = 0.96
-text             = "#d6e1eb"
+background       = "#2a313a"
+background-alpha = 0.97
+text             = "#d9dce0"
 border           = "#ffffff"
 border-alpha     = 0.10
 
 [notifications]
-background       = "#111b27"
-background-alpha = 0.96
-text             = "#d6e1eb"
+background       = "#232a33"
+background-alpha = 0.97
+text             = "#d9dce0"
 # Conventionally matches the Hyprland active-window border. Border accepts
-# either a solid color or the full active-border gradient.
-border           = "#a9d8f0"
-border-alpha     = 0.28
+# either a solid color or the full active border.
+border           = "#ffffff"
+border-alpha     = 0.12
 border-width     = 1
-countdown        = "#6cc7e8"
+countdown        = "#d9dce0"
 
 [launcher]
 # Same six tokens as [menu], applied to the launcher overlay. Alpha
 # companions go from 0 (invisible) to 1 (opaque). scrim is the full-screen
 # dim layer behind the card; background is the card itself. Defaults
 # mirror [menu] with the card at 0.95 to preserve the legacy translucency.
-background       = "#101a26"
-background-alpha = 0.93
-text                      = "#d6e1eb"
-border           = "#a9d8f0"
-border-alpha     = 0.24
-scrim                     = "#0d1520"
+background       = "#232a33"
+background-alpha = 0.97
+text                      = "#d9dce0"
+border           = "#ffffff"
+border-alpha     = 0.12
+scrim                     = "#1a2028"
 scrim-alpha      = 0.35
-selected-background = "#6cc7e8"
-selected-background-alpha = 0.16
-selected-text    = "#f1f6fa"
-selected-border  = "#6cc7e8"
+selected-background = "#386fa3"
+selected-background-alpha = 1.0
+selected-text    = "#f2f4f6"
+selected-border  = "#386fa3"
 selected-border-alpha = 0.0
 
 [menu]
 # Cards, rows, and selected-row treatment. Alpha companions (where present)
 # go from 0 (invisible) to 1 (opaque). scrim is the full-screen dim layer
 # behind the card. Clipboard and emojis inherit these tokens.
-background       = "#101a26"
-background-alpha = 0.96
-text                      = "#d6e1eb"
-border           = "#a9d8f0"
-border-alpha     = 0.24
-scrim                     = "#0d1520"
+background       = "#232a33"
+background-alpha = 0.97
+text                      = "#d9dce0"
+border           = "#ffffff"
+border-alpha     = 0.12
+scrim                     = "#1a2028"
 scrim-alpha      = 0.35
-selected-background = "#6cc7e8"
-selected-background-alpha = 0.16
-selected-text    = "#f1f6fa"
-selected-border  = "#6cc7e8"
+selected-background = "#386fa3"
+selected-background-alpha = 1.0
+selected-text    = "#f2f4f6"
+selected-border  = "#386fa3"
 selected-border-alpha = 0.0
 
 [polkit]
@@ -193,17 +193,17 @@ selected-border-alpha = 0.0
 # text-error tints the lock icon, password text, and placeholder when
 # authentication fails. border-alpha applies to both border and
 # border-error (the two states are mutually exclusive in time).
-background       = "#111b27"
+background       = "#232a33"
 background-alpha = 1.0
-text             = "#d6e1eb"
-text-error       = "#ef7f86"
-border           = "#a9d8f0"
-border-error     = "#ef7f86"
-border-alpha     = 0.30
-scrim            = "#0d1520"
+text             = "#d9dce0"
+text-error       = "#d96a70"
+border           = "#ffffff"
+border-error     = "#d96a70"
+border-alpha     = 0.24
+scrim            = "#1a2028"
 scrim-alpha      = 0.45
 # accent is the lock-icon glyph color + text-selection tint.
-accent           = "#6cc7e8"
+accent           = "#4a90c8"
 
 [lock]
 # Lock screen password input. background/background-alpha control the
@@ -211,17 +211,17 @@ accent           = "#6cc7e8"
 # through idle, typing/authenticating, and wrong-password states.
 # border-alpha applies to all three border states (they are mutually
 # exclusive in time).
-background       = "#0d1520"
+background       = "#1a2028"
 background-alpha = 0.55
-text             = "#d6e1eb"
-placeholder      = "#929ca6"
-text-error       = "#ef7f86"
-border           = "#a9d8f0"
-border-active    = "#6cc7e8"
-border-error     = "#ef7f86"
-border-alpha     = 0.45
+text             = "#d9dce0"
+placeholder      = "#8a929c"
+text-error       = "#d96a70"
+border           = "#ffffff"
+border-active    = "#ffffff"
+border-error     = "#d96a70"
+border-alpha     = 0.24
 # selection is the text-selection tint inside the input field.
-selection        = "#6cc7e8"
+selection        = "#4a90c8"
 selection-alpha  = 0.45
 
 [image-picker]
@@ -229,8 +229,8 @@ selection-alpha  = 0.45
 # surface or backdrop wash. Per-slice dim overlays and text outlines
 # track the foundational background color directly.
 # unselected-border-alpha softens carousel slices that aren't selected.
-text                    = "#d6e1eb"
-selected-border         = "#6cc7e8"
+text                    = "#d9dce0"
+selected-border         = "#4a90c8"
 selected-border-alpha   = 1.0
-unselected-border       = "#d6e1eb"
+unselected-border       = "#d9dce0"
 unselected-border-alpha = 0.28
