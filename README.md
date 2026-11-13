@@ -1,7 +1,8 @@
 # Tidal Glass
 
-A dark theme for [Omarchy](https://omarchy.org). Graphite blue-grey windows, one
-sea-blue accent, and four photographs of cold water.
+A dark theme for [Omarchy](https://omarchy.org). Neutral graphite windows, grey
+selection instead of an accent colour, and four near-monochrome photographs of
+cold water.
 
 ![Tidal Glass preview](preview.png)
 
@@ -45,7 +46,7 @@ omarchy theme remove tidal-glass
 | `colors.toml` | The palette. Omarchy builds the terminal, editor, btop and app themes from it. |
 | `shell.toml` | Menus, launcher, notifications and lock screen. |
 | `hyprland.lua` | 1px borders, 11px corners, window shadow. |
-| `icons.theme` | `Yaru-blue-dark` |
+| `icons.theme` | `Yaru-sage-dark` |
 | `backgrounds/` | The wallpapers. |
 
 ### Corners and shadows
@@ -68,12 +69,12 @@ install command again, then repeat these two lines.
 
 | | | | |
 |---|---|---|---|
-| background | `#1a2028` | foreground | `#d9dce0` |
-| accent | `#4a90c8` | selection | `#2c3f55` |
-| red | `#d96a70` | orange | `#cf8c5c` |
-| yellow | `#d3b878` | green | `#8db388` |
-| cyan | `#6bb2b8` | blue | `#6a9ed2` |
-| magenta | `#a590c0` | brown | `#9a8979` |
+| background | `#1e1e20` | foreground | `#dcdcde` |
+| accent | `#a3a4a8` | selection | `#3a3a3d` |
+| red | `#d9757a` | orange | `#cd9063` |
+| yellow | `#cdb67e` | green | `#93ae8b` |
+| cyan | `#72acae` | blue | `#7c9cc0` |
+| magenta | `#a893b9` | brown | `#9a8d80` |
 
 Window borders are a plain white hairline at low opacity, a little brighter on
 the focused window.
@@ -81,7 +82,7 @@ the focused window.
 ## Wallpapers
 
 All four are from [Pexels](https://www.pexels.com/license/), cropped to 16:10
-and lightly graded.
+and desaturated to sit with the grey windows.
 
 | File | Photographer |
 |------|--------------|

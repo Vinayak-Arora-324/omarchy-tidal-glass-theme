@@ -1,8 +1,8 @@
--- Tidal Glass: hairline neutral borders, rounded corners, wide soft shadow.
+-- Tidal Glass, Graphite: hairline neutral borders, rounded corners, wide soft shadow.
 -- (Used when the theme is a copy in ~/.config/omarchy/themes; installed from
 -- git, Omarchy generates the border colors from colors.toml.)
-local active_border_color = "rgba(ffffff2e)"
-local inactive_border_color = "rgba(ffffff14)"
+local active_border_color = "rgba(ffffff33)"
+local inactive_border_color = "rgba(ffffff1a)"
 
 hl.config({
   general = {
@@ -26,8 +26,8 @@ hl.config({
       range = 40,
       render_power = 3,
       offset = "0 10",
-      color = "rgba(00000099)",
-      color_inactive = "rgba(00000055)",
+      color = "rgba(000000b3)",
+      color_inactive = "rgba(00000066)",
     },
   },
 })
