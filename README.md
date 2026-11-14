@@ -81,7 +81,7 @@ the focused window.
 
 ## Wallpapers
 
-All four are from [Pexels](https://www.pexels.com/license/), cropped to 16:10
+All ten are from [Pexels](https://www.pexels.com/license/), cropped to 16:10
 and desaturated to sit with the grey windows.
 
 | File | Photographer |
@@ -90,3 +90,9 @@ and desaturated to sit with the grey windows.
 | `2-current.webp` | [Kris Møklebust](https://www.pexels.com/photo/dark-ocean-waves-with-reflective-light-patterns-34155535/) |
 | `3-deep.webp` | [Eyüpcan Timur](https://www.pexels.com/photo/deep-dark-ocean-waves-at-twilight-33333829/) |
 | `4-ripple.webp` | [Franco Garcia](https://www.pexels.com/photo/view-of-dark-blue-water-surface-18785204/) |
+| `5-ridge.webp` | [Denis Tuev](https://www.pexels.com/photo/gloomy-sky-over-the-mountain-8991676/) |
+| `6-crag.webp` | [Frank Cone](https://www.pexels.com/photo/landscape-of-rocky-snowcapped-mountains-in-fog-15737041/) |
+| `7-twilight.webp` | [Cencial _](https://www.pexels.com/photo/misty-mountain-landscape-at-twilight-35774948/) |
+| `8-fjord.webp` | [Erik Mclean](https://www.pexels.com/photo/lake-in-a-mountain-valley-in-fog-17491756/) |
+| `9-hamlet.webp` | [Антон Залевський](https://www.pexels.com/photo/aerial-photography-of-mountain-village-14951947/) |
+| `10-mist.webp` | [Amina B](https://www.pexels.com/photo/dense-fog-in-a-forest-10486451/) |
